@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    
+}
+
+.wellcomeText{
+    font-size: 10rem;
+    color:#1F509A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.urlText{
+    font-size: 3rem;
+    color:#1F509A;
+    display: flex; 
+    justify-content: center;
+    margin: 150px 0 0 0;
+}
+
+input {
+    border-radius: 15px;
+    border: black 2px solid;
+    padding: 15px 250px;
+    font-size: 2rem;
+}
