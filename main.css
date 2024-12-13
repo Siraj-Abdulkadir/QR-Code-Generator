@@ -29,3 +29,12 @@ input {
     padding: 15px 250px;
     font-size: 2rem;
 }
+
+.generateButton{
+    background-color: #1F509A;
+    padding:20px 40px;
+    border-radius: 10px;
+    color: white;
+    margin:40px 0 0 45%;
+    font-weight: bold;
+}
