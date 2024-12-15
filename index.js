@@ -13,21 +13,3 @@ function onclickGenerator(){
     console.log(inputBox)
     alert(inputBox)
 }
-
-
-// inquirer
-//   inputBox.prompt([
-//     {message:"Enter the link for your Qr-Code",
-//     name:"URL"}
-//   ])
-//   .then((answers) => {
-//     alert(answers)
-//     const url = answers.URL;
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
