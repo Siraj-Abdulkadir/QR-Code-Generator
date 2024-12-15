@@ -11,7 +11,6 @@ inputBox.addEventListener('keyup', onclickGenerator)
 
 function onclickGenerator(){
     const inputBox= document.getElementById("inputBox").value;
-    console.log(inputBox)
     linkText.innerText = `htpps://${inputBox}`
     linkText.setAttribute('href', inputBox )
     return inputBox;
