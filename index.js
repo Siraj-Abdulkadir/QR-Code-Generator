@@ -10,8 +10,8 @@ inputBox.addEventListener('keyup', onclickGenerator)
 
 
 function onclickGenerator(){
-    const inputBox= document.getElementById("inputBox").value;
-    linkText.innerText = `htpps://${inputBox}`
+    const inputBox= document.getElementById("inputBox").value;N
+    linkText.innerText = `htpps://www.${inputBox}`
     linkText.setAttribute('href', inputBox )
     return inputBox;
 }
