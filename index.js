@@ -13,7 +13,7 @@ generateButtons.addEventListener("click", () =>{
 
         QR_image.src = dataURL
         QR_image.style.display= "initial"
-        wellcomeText2.innerHTML="Here is your link!"
+        wellcomeText2.innerHTML="Here is your QR-Image"
         wellcomeText.style.display = "none"
 
     })
