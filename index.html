@@ -7,14 +7,17 @@
     <title>QR-Code Generator</title>
 </head>
 <body>
-    <h1 class="wellcomeText">Wellcome</h1>
+    <h1 id="wellcomeText">Wellcome</h1>
+    <h2 id="wellcomeText2">Enter your link:</h2>
   
-   <a id="linkText" class="urlText" href="" target="_blank"></a>
+    <img id="QR_image" width="300" alt="QR-image">
    
-        <input class="h2Box" id="inputBox" placeholder="Enter your link(example:google.com)">
+        <input class="h2Box" id="inputBox" placeholder="ex=https://www.google.com">
 
-   <button class="generateButton" id="generateButton" onclick="onclickGenerator()">Generate</button>
+   <button id="generateButton" >Generate</button>
     
    <script src="./index.js"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.js" integrity="sha512-oxrVyBhqnzQ0BzuM0A/6dEIk0alz0p4SpDRaWvtuUoarIc8rnL5lVniHG5Dp21MRFojcQcmKHjaskNXhSaUPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

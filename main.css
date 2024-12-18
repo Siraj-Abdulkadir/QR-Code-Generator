@@ -1,4 +1,4 @@
-.wellcomeText{
+#wellcomeText{
     font-size: 10rem;
     color:#1F509A;
     display: flex;
@@ -6,11 +6,19 @@
     justify-content: center;
     margin-top: 20px;
 }
+#wellcomeText2{
+    font-size: 40px;
+     color:#3677d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0 0 0;
+}
 
 
 .urlText{
     font-size: 3rem;
-    color:#1F509A;
+    color:#3677d8;
     display: flex; 
     justify-content: center;
   
@@ -19,16 +27,20 @@
 .h2Box{
     margin: 0 0 0 22%;
     border-radius: 15px;
-    border: black 2px solid;
+    border: #1F509A 2px solid;
     padding: 15px 250px;
     font-size: 2rem;
 }
 
-.generateButton{
+#generateButton{
     background-color: #1F509A;
     padding:20px 40px;
     border-radius: 10px;
     color: white;
     margin:40px 0 0 45%;
     font-weight: bold;
+}
+
+#QR_image{
+    margin: 0px 0 0 40%;
 }

@@ -1,19 +1,22 @@
-const generateButton = document.getElementById("generateButton");
 
-const linkText = document.getElementById("linkText");
+const generateButtons = document.getElementById("generateButton");
+const QR_image = document.getElementById("QR_image");
+const wellcomeText = document.getElementById("wellcomeText");
+const wellcomeText2 = document.getElementById("wellcomeText2");
+const inputBox= document.getElementById("inputBox");
 
-// import inquirer from 'inquirer';
-const inputBox= document.getElementById("inputBox").value;
+QR_image.style.display= "none"
 
-inputBox.addEventListener('keyup', onclickGenerator)
+generateButtons.addEventListener("click", () =>{
 
+    QRCode.toDataURL(inputBox.value).then(dataURL => {
 
+        QR_image.src = dataURL
+        QR_image.style.display= "initial"
+        wellcomeText2.innerHTML="Here is your link!"
+        wellcomeText.style.display = "none"
 
-function onclickGenerator(){
-    const inputBox= document.getElementById("inputBox").value;N
-    linkText.innerText = `htpps://www.${inputBox}`
-    linkText.setAttribute('href', inputBox )
-    return inputBox;
-}
+    })
+})
 
 
