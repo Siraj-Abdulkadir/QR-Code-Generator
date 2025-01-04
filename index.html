@@ -7,14 +7,19 @@
     <title>QR-Code Generator</title>
 </head>
 <body>
-    <h1 id="wellcomeText">Wellcome</h1>
-    <h2 id="wellcomeText2">Enter your link:</h2>
+   <div class="video-container" width="100vw">
+     <video autoplay muted loop id="background-video" src="./3129671-uhd_3840_2160_30fps.webm"></video>
+    </div>
+    <section class="main-section">
+
+    <h2 id="enter-link-text">Enter your link:</h2>
   
     <img id="QR_image" width="300" alt="QR-image">
    
         <input class="h2Box" id="inputBox" placeholder="ex=https://www.google.com">
 
    <button id="generateButton" >Generate</button>
+</section>
     
    <script src="./index.js"></script>
    

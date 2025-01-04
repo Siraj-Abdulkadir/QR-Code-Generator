@@ -1,46 +1,118 @@
-#wellcomeText{
-    font-size: 10rem;
-    color:#1F509A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
-#wellcomeText2{
+ 
+#wellcomeText{
+    font-size: 7rem;
+    color:#ff0000;
+    margin-top: 2%;
+}
+
+#background-video{
+    position:absolute;
+    top: 0;
+    bottom:0;
+    z-index: -1;
+}
+#enter-link-text{
     font-size: 40px;
-     color:#3677d8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 60px 0 0 0;
+     color:#5bf0fe;
+     margin: 3% 0 3% 0;
 }
 
 
 .urlText{
     font-size: 3rem;
-    color:#3677d8;
+    color:#00d1e3;
     display: flex; 
     justify-content: center;
+   
   
 }
 
+.main-section{
+    border: 2px solid #00d1e3;
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    margin: 7% 0 0 15%;
+}
+
 .h2Box{
-    margin: 0 0 0 22%;
     border-radius: 15px;
-    border: #1F509A 2px solid;
+    border: #00d1e3 2px solid;
     padding: 15px 250px;
     font-size: 2rem;
+    background: transparent;
 }
 
 #generateButton{
-    background-color: #1F509A;
+    background-color:transparent;
     padding:20px 40px;
     border-radius: 10px;
-    color: white;
-    margin:40px 0 0 45%;
+    margin:5% 0 5% 0;
+    border:1px solid #00d1e3 ;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #00d1e3;
+    transition: 0.3s;
+}
+
+#generateButton:hover{
+    background-color:#5bf0fe;
+    padding:20px 40px;
+    border-radius: 10px;
+    margin:5% 0 5% 0;
+    border:1px solid #00d1e3 ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
 }
 
 #QR_image{
-    margin: 0px 0 0 40%;
+    margin: 0 0 2% 0;
+}
+
+
+
+@media (min-aspect-ratio:16/9){
+
+   #background-video{
+    width: 100%;
+    height: auto;
+   }
+}
+@media (max-aspect-ratio:16/9){
+
+   #background-video{
+    width:auto;
+    height: 100%;
+   }
+}
+
+@media (max-width:780px){
+    #inputBox{
+        padding:5px 10px ;
+        font-size: 1rem;
+        border-radius: 10px;
+
+    }
+    #enter-link-text{
+        font-size: 1rem;
+    }
+    #generateButton{
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .main-section{
+        border-radius: 20px;
+    }
 }
